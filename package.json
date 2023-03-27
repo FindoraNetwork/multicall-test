@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.7",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-deploy": "^0.11.25",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "hardhat-diamond-abi": "^3.0.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "sleep-promise": "^9.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "web3": "^1.9.0"
+  },
+  "name": "hardhat_ts_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "run scripts/deploy.ts",
+    "hardhat:dev": "yarn hardhat --network localhost",
+    "hardhat:main": "yarn hardhat --network mainnet",
+    "compile": "yarn hardhat compile",
+    "start": "yarn hardhat node",
+    "test": "yarn hardhat test",
+    "deploy:dev": "yarn hardhat:dev run scripts/deploy.ts",
+    "deploy:main": "yarn hardhat:main run scripts/deploy.ts",
+    "mc1:dev": "yarn hardhat --network localhost mc1",
+    "mc1:main": "yarn hardhat --network mainnet mc1",
+    "mc2:dev": "yarn hardhat --network localhost mc2",
+    "mc2:main": "yarn hardhat --network mainnet mc2"
+  },
+  "license": "MIT"
+}
